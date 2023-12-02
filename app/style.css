@@ -29,9 +29,81 @@ body {
     padding: 20px;
 }
 
+.admin_inicio {
+    background-color: #d2a159;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-inicio {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-inicio h2,
+.texto-inicio p {
+    margin: 0;
+}
+
+.boton-inicio button {
+    background-color: #944d1f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 /* Estilos adicionales para los div internos si es necesario */
-.inivtado_inicio,
-.admin_inicio,
+.inivtado_inicio {
+    background-color: #d2a159;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  }
+  
+  .img-cro {
+    flex: 1; /* Hace que los elementos dentro de img-cro ocupen el mismo espacio */
+    margin-right: 20px; /* Espacio entre la imagen y el siguiente div */
+  }
+  
+  .img-cro img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    border-radius: 8px; /* Borde redondeado para la imagen si es necesario */
+  }
+  
+  .boton-entrar-inv {
+    text-align: right; /* Alinea el botón a la derecha */
+  }
+  
+  .boton-entrar-inv button {
+    padding: 12px; /* Aumenta el espacio interno del botón */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .boton-entrar-inv button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos adicionales para el segundo div (img-cro con texto) */
+  .img-cro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .img-cro p {
+    font-size: 14px;
+  }
+
 .comercio_inicio,
 .usuairo_inicio {
     background-color: #d2a159;

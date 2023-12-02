@@ -3,14 +3,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    background-color: #d2a159;
+    background-color: #6c532d;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .button-container {
     display: flex;
-    gap: 1rem; /* Puedes ajustar el espacio entre los botones aquí */
+    gap: 1rem;
   }
   
   .nav-button {

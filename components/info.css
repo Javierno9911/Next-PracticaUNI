@@ -1,0 +1,36 @@
+.contactos-redes-sociales {
+    background-color: #6c532d;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Ajusta el valor de la altura según sea necesario */
+    margin-top: 0px; /* Ajusta el valor del margen superior según sea necesario */
+  }
+  
+  .contactos, .redes-sociales {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .redes-sociales ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .redes-sociales li {
+    margin-bottom: 10px;
+  }
+  
+  .redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:hover {
+    text-decoration: underline;
+  }

@@ -1,4 +1,6 @@
 import Navbar from '@/components/Navbar';
+import Info from '@/components/info';
+import Formu from '@/components/formulario';
 import { Roboto } from 'next/font/google'
 
 export const metadata = {
@@ -18,8 +20,10 @@ export default function RootLayout({ children }) {
     <html>
       <body className={roboto.className}>
         <Navbar />
-
+        
         {children}
+        
+        <Info />
       </body>
     </html>
   )

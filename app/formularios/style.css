@@ -1,0 +1,20 @@
+body {
+    background-color: #7ebd9e;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.formulario-div {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #d2a159;
+  }
+  
+  .formulario-div h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
