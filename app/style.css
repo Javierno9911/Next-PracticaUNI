@@ -1,0 +1,68 @@
+body {
+    background-color: #7ebd9e;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Estilos generales para los div */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* Primer div a la izquierda */
+.inivtado_inicio {
+    flex: 1;
+    background-color: #d2a159;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Segundo div a la derecha */
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Estilos adicionales para los div internos si es necesario */
+.inivtado_inicio,
+.admin_inicio,
+.comercio_inicio,
+.usuairo_inicio {
+    background-color: #d2a159;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #4c7a68;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para cada tipo de botón */
+.inivtado_inicio button {
+    background-color: #944d1f;
+}
+
+.admin_inicio button {
+    background-color: #944d1f;
+}
+
+.comercio_inicio button {
+    background-color: #944d1f;
+}
+
+.usuairo_inicio button {
+    background-color: #944d1f;
+}

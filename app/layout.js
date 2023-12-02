@@ -1,9 +1,6 @@
 import Navbar from '@/components/Navbar';
 import { Roboto } from 'next/font/google'
 
-//Después de CSS
-import "./globals.css"
-
 export const metadata = {
   title: "CrunchyBites",
   description: "Las mejores croquetas del pais",
