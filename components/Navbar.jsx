@@ -18,6 +18,9 @@ export default function Navbar() {
         <Link href="/usuario">
           <button className="nav-button">USUARIO</button>
         </Link>
+        <Link href="/invitado">
+          <button className="nav-button">INVITADO</button>
+        </Link>
       </div>
     </nav>
   );

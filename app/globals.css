@@ -1,5 +1,6 @@
 body {
-    background-color: #ffffff;
+    background-color: #7ebd9e;
+    font-family: 'Arial', sans-serif; /* Cambiar la fuente del texto */
 }
 
 /* Estilos generales para los div */
@@ -11,30 +12,53 @@ body {
 
 /* Primer div a la izquierda */
 .container > div:first-child {
-    flex: 1; /* Ocupa todo el espacio disponible */
+    flex: 1;
     background-color: #d2a159;
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 10px; /* Redondear esquinas */
-    padding: 255px; /* Ajusta el tamaño vertical */
-    
+    border-radius: 10px;
+    padding: 20px; /* Ajusta el tamaño vertical */
 }
 
 /* Segundo div a la derecha */
 .container > div:last-child {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre los divs internos */
-    width: 50%; /* Ancho de los divs internos */
-    border-radius: 10px; /* Redondear esquinas */
-    padding: 20px; /* Ajusta el tamaño vertical */
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* Estilos adicionales para los div internos si es necesario */
 .container > div > div {
-    /* Estilos para los div internos */
-    border: 1px solid #ccc;
     background-color: #d2a159;
-    padding: 20px; /* Ajusta el tamaño vertical */
-    flex: 1; /* Ocupa todo el espacio disponible verticalmente */
-    border-radius: 8px; /* Redondear esquinas */
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #4c7a68; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 15px; /* Ajusta el espaciado interno del botón */
+    border-radius: 5px; /* Redondear esquinas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos específicos para cada tipo de botón */
+.container > div:first-child button {
+    background-color: #944d1f; /* Cambia el color del botón INVITADO */
+}
+
+.container > div:last-child div:nth-child(1) button {
+    background-color: #944d1f; /* Cambia el color del botón ADMIN */
+}
+
+.container > div:last-child div:nth-child(2) button {
+    background-color: #944d1f; /* Cambia el color del botón COMERCIO */
+}
+
+.container > div:last-child div:nth-child(3) button {
+    background-color: #944d1f; /* Cambia el color del botón USUARIO */
 }
