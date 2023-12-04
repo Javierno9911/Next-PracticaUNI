@@ -83,14 +83,14 @@ body {
   
   .boton-entrar-inv button {
     padding: 12px; /* Aumenta el espacio interno del botón */
-    background-color: #007bff;
+    background-color: #996f40;
     color: #fff;
     border: none;
     cursor: pointer;
   }
   
   .boton-entrar-inv button:hover {
-    background-color: #0056b3;
+    background-color: #996f40;
   }
   
   /* Estilos adicionales para el segundo div (img-cro con texto) */
@@ -114,7 +114,7 @@ body {
 
 /* Estilos para los botones */
 button {
-    background-color: #4c7a68;
+    background-color: #944d1f;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -126,15 +126,24 @@ button {
 .inivtado_inicio button {
     background-color: #944d1f;
 }
-
+.inivtado_inicio button:hover {
+  background-color: #996f40;
+}
 .admin_inicio button {
     background-color: #944d1f;
 }
-
+.admin_inicio button:hover {
+  background-color: #996f40;
+}
 .comercio_inicio button {
     background-color: #944d1f;
 }
-
+.comercio_inicio button:hover {
+  background-color: #996f40;
+}
 .usuairo_inicio button {
     background-color: #944d1f;
+}
+.usuairo_inicio button:hover {
+  background-color: #996f40;
 }

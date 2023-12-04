@@ -9,7 +9,9 @@ function UsuarioPage() {
             <input type="text" id="nom" class="nombre"></input>
             <label for="nombre">Contraseña</label>
             <input class="contraseña" id="con" type="text"></input>
-            <button class="boton-login">LOGIN</button>
+            <Link href="/usuario/menu">
+              <button class="boton-login">LOGIN</button>
+            </Link>
             <Link href="/usuario/registro">
                 <p class="link-registro">¿No tienes cuenta?</p>
             </Link>

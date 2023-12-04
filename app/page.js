@@ -24,7 +24,7 @@ export default function Home() {
             <p>Gestiona comercios con facilidad y mantén a tus proveedores informados.</p>
           </div>
           <div class="boton-inicio">
-            <Link href="/formularios">
+            <Link href="/admin">
               <button>ENTRAR</button>
             </Link>
           </div>
