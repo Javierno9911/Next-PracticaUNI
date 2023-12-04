@@ -1,6 +1,5 @@
 import "./style.css"
 //import Link from 'next/link';
-
 function FormuPage() {
     return (
         <div class="container-menu">
@@ -9,27 +8,11 @@ function FormuPage() {
             </div>
             <div class="container-de-select">
                 <div>
-                    <label for="select1">Ciudad</label>
-                    <select class="ciudad-select" id="select1">
-                        <option value="">Ninguna ciudad ❌</option>
-                        <option value="">Madrid 🏙️</option>
-                        <option value="">Barcelona 🏙️</option>
-                        <option value="">Valencia 🏙️</option>
-                    </select>
+                    <button class="boton-menu-user">FILTROS</button>
                 </div>
-
                 <div>
-                    <label for="select2">Actividad</label>
-                    <select class="actividad-select" id="select2">
-                        <option value="">Ninguna actividad ❌</option>
-                        <option value="">Tapeo 🍺</option>
-                        <option value="">Gourmet 🍽️</option>
-                        <option value="">Menu 🍱</option>
-                    </select>
+                    <button class="boton-menu-user">BORRAR</button>
                 </div>
-            </div>
-            <div class="boton-buscar-usur">
-                <button class="boton-menu-user">BUSCAR</button>
             </div>
         </div>
       )

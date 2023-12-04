@@ -34,19 +34,6 @@ body {
     height: 5px; /* Altura ajustada */
 }
 
-/* Añadí estilos para el borde del div que contiene cada select */
-.container-de-select > div {
-    border: 1px solid #000;
-    background-color: #a67f45;
-    border-radius: 5px;
-}
-
-.select {
-    width: 48px; /* Ancho de cada selector, con espacio para el gap */
-    height: 10px; /* Altura ajustada */
-    border-radius: 0; /* Elimina las esquinas redondeadas */
-}
-
 .boton-menu-user {
     padding: 10px;
     background-color: #4CAF50;
