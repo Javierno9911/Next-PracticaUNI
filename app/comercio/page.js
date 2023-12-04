@@ -9,7 +9,9 @@ function ComercioPage() {
             <input type="text" id="nom" class="nombre"></input>
             <label for="nombre">Contraseña</label>
             <input class="contraseña" id="con" type="text"></input>
-            <button class="boton-login">LOGIN</button>
+            <Link href="/comercio/menu">
+              <button class="boton-login">LOGIN</button>
+            </Link>
           </div>
         </div>
       )

@@ -1,0 +1,23 @@
+.container-de-select,
+.boton-buscar-usur {
+    width: 100%;
+    flex-grow: 1; /* Ocupa todo el espacio disponible verticalmente */
+    margin-bottom: 20px;
+}
+
+.container-de-select {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a cada lado */
+    gap: 10px; /* Espacio entre los selectores */
+    width: 40%;
+    height: 5px; /* Altura ajustada */
+}
+
+.boton-menu-user {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

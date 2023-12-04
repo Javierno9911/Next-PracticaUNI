@@ -1,11 +1,11 @@
 import "./style.css"
 //import Link from 'next/link';
 import Menu from '@/components/menu';
-function FormuPage() {
+function MenuUsuario() {
     return (
         <div class="container-menu">
-            <Menu tipo="comercio" />
+            <Menu tipo="usuario" />
         </div>
       )
 }
-export default FormuPage;
+export default MenuUsuario;
