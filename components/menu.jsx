@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './menu.css';
-
+import Link from 'next/link';
 function MenuPage({ tipo }) {
   let botones;
 
@@ -9,10 +9,14 @@ function MenuPage({ tipo }) {
       botones = (
         <>
           <div>
+          <Link href="/admin/crear">
             <button className={styles["boton-menu-user"]}>CREAR COMERCIO</button>
+          </Link>
           </div>
           <div>
+            <Link href="/admin/borrar">
             <button className={styles["boton-menu-user"]}>BORRAR COMERCIO</button>
+            </Link>
           </div>
         </>
       );
@@ -21,13 +25,19 @@ function MenuPage({ tipo }) {
       botones = (
         <>
           <div>
+          <Link href="/comercio/crear">
             <button className={styles["boton-menu-user"]}>AÑADIR CROQUETA</button>
+            </Link>
           </div>
           <div>
+          <Link href="/comercio/borrar-publicacion">
             <button className={styles["boton-menu-user"]}>BORRAR CROQUETA</button>
+            </Link>
           </div>
           <div>
+          <Link href="/comercio/borrar">
             <button className={styles["boton-menu-user"]}>BORRAR COMERCIO</button>
+            </Link>
           </div>
         </>
       );
@@ -36,10 +46,14 @@ function MenuPage({ tipo }) {
         botones = (
             <>
               <div>
+              <Link href="/usuario/filtros">
                 <button className={styles["boton-menu-user"]}>FILTROS</button>
+                </Link>
               </div>
               <div>
+              <Link href="/usuario/borrar">
                 <button className={styles["boton-menu-user"]}>BORRAR</button>
+                </Link>
               </div>
             </>
           );

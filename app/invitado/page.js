@@ -1,11 +1,11 @@
 import "./style.css"
 //import Link from 'next/link';
-import Borrar from '@/components/borrar';
+import Filtro from '@/components/filtro';
 function InvitadoPage() {
     return (
         <div class="formulario-div">
             <h1>Informacion Comercio</h1>
-            <Borrar tipo="admin" />
+            <Filtro />
         </div>
     )
 }
