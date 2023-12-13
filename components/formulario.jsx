@@ -9,6 +9,7 @@ const Formulario = ({ tipo }) => {
       inputs = (
         <>
           <input type="text" placeholder="Nombre Comercio" />
+          <input type="text" placeholder="Contraseña" />
           <input type="text" placeholder="CIF" />
           <input type="text" placeholder="Ciudad" />
           <input type="text" placeholder="Direcion" />
@@ -21,7 +22,6 @@ const Formulario = ({ tipo }) => {
       inputs = (
         <>
           <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Imagen" />
           <input type="text" placeholder="Ingredientes" />
         </>
       );

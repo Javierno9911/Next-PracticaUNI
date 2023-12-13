@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Info from '@/components/info';
-import { Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google';
 
 export const metadata = {
   title: "CrunchyBites",

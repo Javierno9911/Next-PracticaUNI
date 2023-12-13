@@ -1,7 +1,7 @@
 import React from 'react';
 import './filtro.css';
 
-function FormuPage() {
+function Filtros_Page() {
   return (
     <div className="container-menu">
       <div className="titulo-menu">
@@ -35,4 +35,4 @@ function FormuPage() {
   );
 }
 
-export default FormuPage;
+export default Filtros_Page;
