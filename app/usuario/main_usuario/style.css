@@ -1,0 +1,57 @@
+usuariobody {
+    background-color: #7ebd9e;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container-menu {
+    text-align: center;
+    background-color: #d2a159;
+    height: 45vh; /* Reducí la altura */
+    width: 50%;
+    margin: 45px auto; /* Añadí un margen para bajar el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* Quité las esquinas redondeadas */
+    border: 2px solid #000; /* Añadí un borde de 2px de ancho y color negro */
+}
+
+.titulo-menu,
+.container-de-select,
+.boton-buscar-usur {
+    width: 100%;
+    flex-grow: 1; /* Ocupa todo el espacio disponible verticalmente */
+    margin-bottom: 20px;
+}
+
+.container-de-select {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a cada lado */
+    gap: 10px; /* Espacio entre los selectores */
+    width: 40%;
+    height: 5px; /* Altura ajustada */
+}
+
+/* Añadí estilos para el borde del div que contiene cada select */
+.container-de-select > div {
+    border: 1px solid #000;
+    background-color: #a67f45;
+    border-radius: 5px;
+}
+
+.select {
+    width: 48px; /* Ancho de cada selector, con espacio para el gap */
+    height: 10px; /* Altura ajustada */
+    border-radius: 0; /* Elimina las esquinas redondeadas */
+}
+
+.boton-menu-user {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './filtro.css';
+import Link from 'next/link';
 
 function Filtros_Page() {
   return (
@@ -29,7 +30,9 @@ function Filtros_Page() {
         </div>
       </div>
       <div className="boton-buscar-usur">
-        <button className="boton-menu-user">BUSCAR</button>
+        <Link href="/usuario/main_usuario">
+          <button className="boton-menu-user">BUSCAR</button>
+        </Link>
       </div>
     </div>
   );

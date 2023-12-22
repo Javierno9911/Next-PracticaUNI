@@ -1,0 +1,54 @@
+.div-caja {
+    text-align: center;
+    background-color: #3e7157;
+    height: 20vh;
+    width: 35%;
+    margin: 20px 0; /* Ajusta el margen superior e inferior según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    border-radius: 0;
+    border: 2px solid #000;
+}
+.nombre-actividad{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.elementos-importantes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipo-de-actividad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8cdd8f;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px; /* Ajusta el margen según tus necesidades */
+}
+.continuar-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #75c7e0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+.informacion-extra {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en línea horizontalmente */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.informacion-extra p {
+    margin: 0 10px; /* Ajusta el margen horizontal entre los párrafos según tus necesidades */
+}
