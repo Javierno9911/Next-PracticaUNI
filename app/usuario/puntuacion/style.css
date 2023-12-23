@@ -1,0 +1,37 @@
+/* Estilos para el contenedor principal */
+.container-registro {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para apilar verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilos para el título */
+.titulo {
+    margin-bottom: 20px; /* Espaciado entre el título y las columnas */
+    background-color: #e8cca3;
+    border: 1px solid #000000;
+}
+
+/* Estilos para las columnas y elementos dentro de ellas */
+.col {
+    display: flex;
+    background-color: #d2a159;
+    border: 1px solid #000000;
+}
+
+.col > div {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.estrellas-p {
+    margin-top: 5px; /* Espacio entre las etiquetas y los botones */
+    background-color: #91e2a1;
+    border: 1px solid #000000;
+    padding: 8px 15px; /* Ajusta el padding según tus preferencias */
+    border-radius: 8px; /* Ajusta el radio de las esquinas según tus preferencias */
+}

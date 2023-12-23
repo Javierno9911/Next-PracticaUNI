@@ -8,7 +8,11 @@ function Croqueta_Info({ tipo }) {
 
     switch (tipo) {
         case 'usuario':
-            puntuar = (<button className="puntuar-boton">⭐</button>);
+            puntuar = (
+            <Link href="/usuario/puntuacion">
+                <button className="puntuar-boton">⭐</button>
+            </Link>
+            );
             break;
         case 'invitado':
             break;

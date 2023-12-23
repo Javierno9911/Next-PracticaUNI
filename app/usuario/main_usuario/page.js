@@ -3,7 +3,7 @@ import Lista from '@/components/listaCajas';
 function InvitadoPage() {
     return (
         <div class="formulario-div">
-            <Lista tipo="invitado" />
+            <Lista tipo="usuario" />
         </div>
     )
 }
