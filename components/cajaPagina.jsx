@@ -1,7 +1,7 @@
 import React from 'react';
 import './cajaPagina.css';
 import Link from 'next/link';
-
+ {/* TODOS LOS DATOS HAY QUE PASARLOS */}
 function Filtros_Page(ciudad, actividad) {
     let c = ciudad;
     let a = actividad;
@@ -9,12 +9,15 @@ function Filtros_Page(ciudad, actividad) {
     <div className="container-lista-pagina">
         <div className="div-caja">
             <div className="nombre-actividad">
+                {/* {c} */}
                 <h4>CROQUETAS AL HORNO</h4>
             </div>
             <div className="informacion-extra">
                 {/* {c} */}
                 <p>MADIRD</p>
+                {/* {c} */}
                 <p>PINTO</p>
+                {/* {c} */}
                 <p>609678903</p>
             </div>
             <div className="elementos-importantes">
@@ -26,7 +29,6 @@ function Filtros_Page(ciudad, actividad) {
                     <div className="continuar-pagina">
                         <p>➡️</p>
                     </div> 
-
             </div>
         </div>  
     </div>

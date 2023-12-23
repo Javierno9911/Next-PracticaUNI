@@ -18,6 +18,11 @@ function MenuPage({ tipo }) {
             <button className={styles["boton-menu-user"]}>BORRAR COMERCIO</button>
             </Link>
           </div>
+          <div>
+            <Link href="/admin/borrar">
+            <button className={styles["boton-menu-user"]}>LISTADO COMERCIOS</button>
+            </Link>
+          </div>
         </>
       );
       break;
@@ -32,6 +37,11 @@ function MenuPage({ tipo }) {
           <div>
           <Link href="/comercio/borrar-publicacion">
             <button className={styles["boton-menu-user"]}>BORRAR CROQUETA</button>
+            </Link>
+          </div>
+          <div>
+          <Link href="/comercio/borrar">
+            <button className={styles["boton-menu-user"]}>LSITADO DE INTERESADOS</button>
             </Link>
           </div>
           <div>

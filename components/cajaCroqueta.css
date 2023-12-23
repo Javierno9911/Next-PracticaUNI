@@ -1,0 +1,53 @@
+.container-lista-croqueta {
+    padding: 10px;
+    margin: 10px;
+    width: 300px; /* Adjust the width as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.div-caja-croqueta {
+    background-color: #b8e7ce;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #2c3e50; /* Add your preferred border color */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Add a height to enable vertical centering */
+}
+
+.nombre-croqueta h4 {
+    color: #333;
+}
+
+.informacion-croqueta p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.elementos-importantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tipo-de-actividad p {
+    font-size: 1.5em;
+}
+
+.container-puntuar-boton button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.container-puntuar-boton button:hover {
+    background-color: #ffca2b;
+}
