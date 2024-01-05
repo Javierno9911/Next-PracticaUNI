@@ -1,21 +1,24 @@
 import React from 'react';
 import styles from './borrar.css';
 
-function UsuarioBorrarPage({ tipo }) {
+function UsuarioBorrarListaPage({ tipo }) {
   let labelText = "";
 
   switch (tipo) {
-    case "usuario":
-      labelText = "SI DESEAS BORRAR EL USUARIO, DALE AL BOTÓN";
+    case "admin":
+      labelText = "SI DESEAS BORRAR EL USUARIO, DALE AL BOTÓN A";
       break;
     case "comercio":
       labelText = "SI DESEAS BORRAR EL COMERCIO, DALE AL BOTÓN";
       break;
     default:
-      labelText = "SI DESEAS BORRAR, DALE AL BOTÓN";
+      labelText = "SI DESEAS BORRAR, DALE AL BOTÓN A";
   }
 
+    {/* ESTE NO ES LA INTERFAZ FINAL */}
+
   return (
+    
     <div className={styles["container-borrar"]}>
       <div className={styles["titulo-menu"]}>
         <h1>MENU</h1>
@@ -28,4 +31,4 @@ function UsuarioBorrarPage({ tipo }) {
   );
 }
 
-export default UsuarioBorrarPage;
+export default UsuarioBorrarListaPage;

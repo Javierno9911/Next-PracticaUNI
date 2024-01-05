@@ -41,7 +41,7 @@ function MenuPage({ tipo }) {
           </div>
           <div>
           <Link href="/comercio/borrar">
-            <button className={styles["boton-menu-user"]}>LSITADO DE INTERESADOS</button>
+            <button className={styles["boton-menu-user"]}>LSITADO DE PUNTUACIONES</button>
             </Link>
           </div>
           <div>

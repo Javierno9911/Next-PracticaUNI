@@ -3,6 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
+button {
+    background-color: #944d1f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .container-menu {
     text-align: center;

@@ -1,28 +1,55 @@
 /* use client */
 
-import "./style.css";
+/*import { useRouter } from 'next/navigation'*/
 import Link from 'next/link';
-import { GET as getDatabase, database } from '../api/admin/route.js';
+import React from 'react';
+function AdminPage() {/*
+  const router = useRouter();
+  const [username, setUsername] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
-export async function GET() {
-  const databaseResponse = await getDatabase();
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
 
-  const databaseData = databaseResponse.data;
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
-  return NextResponse.json({ message: 'Datos obtenidos de la base de datos', data: databaseData });
-}
-function AdminPage() {
-
+  const handleLogin = () => {
+    // Validar credenciales (usuario y contraseña)
+    if (username === 'admin' && password === '123') {
+      // Credenciales correctas, redirigir a la página de menú del admin
+      router.push('/admin/menu');
+    } else {
+      // Credenciales incorrectas, puedes manejar esto de acuerdo a tus necesidades
+      alert('Credenciales incorrectas. Por favor, verifica tu nombre de usuario y contraseña.');
+    }
+  };*/
   return (
     <div className="container-registro">
       <div className="login">
         <h2>LOGIN ADMIN</h2>
-        <label htmlFor="nombre">Nombre</label>
-        <input type="text" id="nom" className="nombre" />
-        <label htmlFor="nombre">Contraseña</label>
-        <input className="contraseña" id="con" type="text" />
+        <label htmlFor="nom">Nombre</label>
+        <input
+          type="text"
+          id="nom"
+          className="nombre"
+          /*value={username}
+          onChange={handleUsernameChange}*/
+        />
+        <label htmlFor="con">Contraseña</label>
+        <input
+          className="contraseña"
+          id="con"
+          type="password"  // Cambiado a type="password" para ocultar la contraseña
+         /* value={password}
+          onChange={handlePasswordChange}*/
+        />
         <Link href="/admin/menu">
-          <button className="boton-login">LOGIN</button>
+          <button className="boton-login"/* onClick={handleLogin}*/>
+            LOGIN
+          </button>
         </Link>
       </div>
     </div>
@@ -30,4 +57,3 @@ function AdminPage() {
 }
 
 export default AdminPage;
-
