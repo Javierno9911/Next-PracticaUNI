@@ -1,6 +1,7 @@
+// @react
 import React from 'react';
 import styles from './formulario.css';
-
+import Link from 'next/link';
 const Formulario = ({ tipo }) => {
   let inputs;
 
@@ -15,14 +16,25 @@ const Formulario = ({ tipo }) => {
           <input type="text" placeholder="Direcion" />
           <input type="text" placeholder="E-mail" />
           <input type="text" placeholder="Telefono" />
+          <button type="submit">Enviar</button>
+          <button type="button">Volver</button>
         </>
       );
       break;
     case 'comercio':
       inputs = (
         <>
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Ingredientes" />
+          <input
+            type="text"
+            placeholder="Nombre"
+          />
+          <input
+            type="text"
+            placeholder="Ingredientes"
+          />
+          <button type="submit">
+            Enviar
+          </button>
         </>
       );
       break;
@@ -34,6 +46,7 @@ const Formulario = ({ tipo }) => {
           <input type="text" placeholder="Ciudad" />
           <input type="text" placeholder="Edad" />
           <input type="text" placeholder="Actividad" />
+          <button type="submit">Enviar</button>
         </>
       );
       break;
@@ -44,7 +57,6 @@ const Formulario = ({ tipo }) => {
   return (
     <form className={styles.formulario}>
       {inputs}
-      <button type="submit">Enviar</button>
     </form>
   );
 };

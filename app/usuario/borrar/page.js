@@ -5,8 +5,8 @@ import Borrar from '@/components/borrar';
 function UsuarioBorrarPage() {
   return (
     <div class="formulario-div">
-      <h1>Informacion Comercio</h1>
-      <Borrar tipo="admin" />
+      <h1>BORRAR USUARIO</h1>
+      <Borrar tipo="usuario" />
     </div>
     )
 }

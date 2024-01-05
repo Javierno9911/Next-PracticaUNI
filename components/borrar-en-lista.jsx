@@ -1,34 +1,67 @@
+// TipoLista.jsx
 import React from 'react';
-import styles from './borrar.css';
+import styles from './tipo-lista.css';  // Importar el archivo de estilos
+import Link from 'next/link';
 
-function UsuarioBorrarListaPage({ tipo }) {
-  let labelText = "";
+function BorrarLista({ tipo }) {
+  let botones;
 
   switch (tipo) {
-    case "admin":
-      labelText = "SI DESEAS BORRAR EL USUARIO, DALE AL BOTÓN A";
+    case 'admin':
+      botones = (
+        <>
+          <div className="caja">
+            <div className="titulo-menu">
+              <h1>LISTA DE COMERCIOS</h1>
+            </div>
+            <ul>
+              <li>Nombre CIF Ciudad <button>BORRAR</button></li>
+              <li>Nombre CIF Ciudad <button>BORRAR</button></li>
+              <li>Nombre CIF Ciudad <button>BORRAR</button></li>
+            </ul>
+          </div>
+        </>
+      );
       break;
-    case "comercio":
-      labelText = "SI DESEAS BORRAR EL COMERCIO, DALE AL BOTÓN";
+    case 'comercio':
+      botones = (
+        <>
+          <div className="caja">
+            <div className="titulo-menu">
+              <h1>LISTA DE USUARIOS</h1>
+            </div>
+            <ul>
+              <li>Nombre <button>BORRAR</button></li>
+              <li>Nombre <button>BORRAR</button></li>
+              <li>Nombre <button>BORRAR</button></li>
+            </ul>
+          </div>
+        </>
+      );
       break;
     default:
-      labelText = "SI DESEAS BORRAR, DALE AL BOTÓN A";
+      botones = (
+        <>
+          <div className="caja">
+            <div className="titulo-menu">
+              <h1>LISTA DE INVITADOS</h1>
+            </div>
+            <ul>
+              <li>Nombre</li>
+              <li>Nombre</li>
+              <li>Nombre</li>
+            </ul>
+          </div>
+        </>
+      );
+      break;
   }
 
-    {/* ESTE NO ES LA INTERFAZ FINAL */}
-
   return (
-    
-    <div className={styles["container-borrar"]}>
-      <div className={styles["titulo-menu"]}>
-        <h1>MENU</h1>
-      </div>
-      <div className={styles["boton-borrar-usur"]}>
-        <label htmlFor="select1">{labelText}</label>
-        <button className={styles["boton-menu-user"]}>BORRAR</button>
-      </div>
+    <div className="contenedor">
+      {botones}
     </div>
   );
 }
 
-export default UsuarioBorrarListaPage;
+export default BorrarLista;

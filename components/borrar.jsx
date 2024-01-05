@@ -18,7 +18,6 @@ function UsuarioBorrarPage({ tipo }) {
   return (
     <div className={styles["container-borrar"]}>
       <div className={styles["titulo-menu"]}>
-        <h1>MENU</h1>
       </div>
       <div className={styles["boton-borrar-usur"]}>
         <label htmlFor="select1">{labelText}</label>
