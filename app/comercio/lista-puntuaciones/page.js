@@ -1,15 +1,19 @@
 import "./style.css"
+import Link from 'next/link';
 import ListasAdminy from '@/components/tipo-lista';
 function InvitadoPage() {
     return (
-        <div class="formulario-div">
-            <ListasAdminy tipo="comercio" />
+        <div>
+            <div className="boton-atras-container">
+                <Link href="/comercio/menu">
+                    <button className="bton-atras">⬅</button>
+                </Link>
+            </div>
+            <div class="formulario-div">
+                <ListasAdminy tipo="comercio" />
+            </div>
         </div>
-        /*
-        <div class="formulario-div">
-            <Lista tipo="invitado" />
-        </div>
-        */
+        
     )
 }
 export default InvitadoPage;

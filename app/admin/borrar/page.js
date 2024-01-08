@@ -4,17 +4,17 @@ import Borrar from '@/components/borrar-en-lista';
 
 function ComercioBorrarPage() {
   return (
-    <div>
-    <div class="formulario-div">
-      <Borrar tipo="admin" />
+    <div className="formulario-div">
+      <div className="boton-atras-container">
+        <Link href="/admin/menu">
+          <button className="bton-atras">⬅</button>
+        </Link>
+      </div>
+      <div className="borrar-container">
+        <Borrar tipo="admin" />
+      </div>
     </div>
-    <div class="formulario-div">
-      <h1>Atras</h1>
-      <Link href="/admin/menu">
-        <button>⬅</button>
-      </Link>
-    </div>
-    </div>
-    )
+  );
 }
+
 export default ComercioBorrarPage;

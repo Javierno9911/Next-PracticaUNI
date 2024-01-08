@@ -17,7 +17,6 @@ const Formulario = ({ tipo }) => {
           <input type="text" placeholder="E-mail" />
           <input type="text" placeholder="Telefono" />
           <button type="submit">Enviar</button>
-          <button type="button">Volver</button>
         </>
       );
       break;

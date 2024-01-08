@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
+
 .formulario-div {
     max-width: 600px;
     margin: 20px auto;
@@ -12,9 +13,27 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #d2a159;
 }
-    
+
+.borrar-container {
+    margin-bottom: 20px; /* Añadido margen inferior para separar la lista del botón */
+}
+
 .formulario-div h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
+}
+
+.boton-atras-container {
+    text-align: center; /* Centrar el botón */
+}
+
+.bton-atras {
+    background-color: #996f40;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
 }

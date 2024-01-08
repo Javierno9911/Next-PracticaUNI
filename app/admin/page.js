@@ -1,9 +1,8 @@
-/* use client */
-
-/*import { useRouter } from 'next/navigation'*/
-import Link from 'next/link';
+"use client";
+import { useRouter } from 'next/navigation';
 import React from 'react';
-function AdminPage() {/*
+
+function AdminPage() {
   const router = useRouter();
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -17,15 +16,13 @@ function AdminPage() {/*
   };
 
   const handleLogin = () => {
-    // Validar credenciales (usuario y contraseña)
     if (username === 'admin' && password === '123') {
-      // Credenciales correctas, redirigir a la página de menú del admin
       router.push('/admin/menu');
     } else {
-      // Credenciales incorrectas, puedes manejar esto de acuerdo a tus necesidades
-      alert('Credenciales incorrectas. Por favor, verifica tu nombre de usuario y contraseña.');
+      console.log('Verifica tu nombre de usuario y contraseña, una de las dos esta incorrecta.');
     }
-  };*/
+  };
+
   return (
     <div className="container-registro">
       <div className="login">
@@ -35,22 +32,20 @@ function AdminPage() {/*
           type="text"
           id="nom"
           className="nombre"
-          /*value={username}
-          onChange={handleUsernameChange}*/
+          value={username}
+          onChange={handleUsernameChange}
         />
         <label htmlFor="con">Contraseña</label>
         <input
           className="contraseña"
           id="con"
-          type="password"  // Cambiado a type="password" para ocultar la contraseña
-         /* value={password}
-          onChange={handlePasswordChange}*/
+          type="password" 
+          value={password}
+          onChange={handlePasswordChange}
         />
-        <Link href="/admin/menu">
-          <button className="boton-login"/* onClick={handleLogin}*/>
-            LOGIN
-          </button>
-        </Link>
+        <button className="boton-login" onClick={handleLogin}>
+          LOGIN
+        </button>
       </div>
     </div>
   );

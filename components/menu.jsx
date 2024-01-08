@@ -36,7 +36,7 @@ function MenuPage({ tipo }) {
           </div>
           <div>
           <Link href="/comercio/lista-puntuaciones">
-            <button className={styles["boton-menu-user"]}>LSITADO DE PUNTUACIONES</button>
+            <button className={styles["boton-menu-user"]}>LISTADO DE PUNTUACIONES</button>
             </Link>
           </div>
           <div>
