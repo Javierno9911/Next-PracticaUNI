@@ -1,16 +1,16 @@
 .container-de-select,
 .boton-buscar-usur {
     width: 100%;
-    flex-grow: 1; /* Ocupa todo el espacio disponible verticalmente */
+    flex-grow: 1; 
     margin-bottom: 20px;
 }
 
 .container-de-select {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a cada lado */
-    gap: 10px; /* Espacio entre los selectores */
+    justify-content: space-between; 
+    gap: 10px; 
     width: 40%;
-    height: 5px; /* Altura ajustada */
+    height: 5px; 
 }
 
 .boton-menu-user {

@@ -1,20 +1,18 @@
-/* Estilos para el contenedor principal */
+
 .container-registro {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para apilar verticalmente */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Ajusta la altura según sea necesario */
+    height: 30vh; 
 }
 
-/* Estilos para el título */
 .titulo {
-    margin-bottom: 20px; /* Espaciado entre el título y las columnas */
+    margin-bottom: 20px;
     background-color: #e8cca3;
     border: 1px solid #000000;
 }
 
-/* Estilos para las columnas y elementos dentro de ellas */
 .col {
     display: flex;
     background-color: #d2a159;
@@ -29,9 +27,9 @@
 }
 
 .estrellas-p {
-    margin-top: 5px; /* Espacio entre las etiquetas y los botones */
+    margin-top: 5px; 
     background-color: #e8cca3;
     border: 1px solid #000000;
-    padding: 8px 15px; /* Ajusta el padding según tus preferencias */
-    border-radius: 8px; /* Ajusta el radio de las esquinas según tus preferencias */
+    padding: 8px 15px; 
+    border-radius: 8px; 
 }

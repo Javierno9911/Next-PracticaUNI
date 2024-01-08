@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    margin-top: 30px; /* Más separación desde arriba */
+    margin-top: 30px;
   }
   
   .caja {
@@ -12,14 +12,13 @@
     padding: 20px;
     margin: 10px;
     background-color: #d2a159;
-    width: 60%; /* Ajusta la anchura según sea necesario */
+    width: 60%;
   }
   
   .titulo-menu {
     margin-bottom: 20px;
   }
   
-  /* Estilos para la lista */
   ul {
     list-style-type: none;
     padding: 0;

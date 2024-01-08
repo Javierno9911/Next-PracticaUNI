@@ -1,7 +1,7 @@
 .container-lista-croqueta {
     padding: 10px;
     margin: 10px;
-    width: 300px; /* Adjust the width as needed */
+    width: 300px; 
     justify-content: center;
     align-items: center;
 }
@@ -11,11 +11,11 @@
     padding: 10px;
     border-radius: 5px;
     width: 100%;
-    border: 2px solid #2c3e50; /* Add your preferred border color */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 2px solid #2c3e50; 
+    box-sizing: border-box; 
     justify-content: center;
     align-items: center;
-    height: 100%; /* Add a height to enable vertical centering */
+    height: 100%;
 }
 
 .nombre-croqueta h4 {

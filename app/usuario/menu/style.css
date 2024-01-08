@@ -7,31 +7,31 @@ body {
 .container-menu {
     text-align: center;
     background-color: #d2a159;
-    height: 45vh; /* Reducí la altura */
+    height: 45vh; 
     width: 50%;
-    margin: 45px auto; /* Añadí un margen para bajar el contenedor */
+    margin: 45px auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 0; /* Quité las esquinas redondeadas */
-    border: 2px solid #000; /* Añadí un borde de 2px de ancho y color negro */
+    border-radius: 0; 
+    border: 2px solid #000; 
 }
 
 .titulo-menu,
 .container-de-select,
 .boton-buscar-usur {
     width: 100%;
-    flex-grow: 1; /* Ocupa todo el espacio disponible verticalmente */
+    flex-grow: 1; 
     margin-bottom: 20px;
 }
 
 .container-de-select {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a cada lado */
-    gap: 10px; /* Espacio entre los selectores */
+    justify-content: space-between; 
+    gap: 10px;
     width: 40%;
-    height: 5px; /* Altura ajustada */
+    height: 5px; 
 }
 
 .boton-menu-user {

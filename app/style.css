@@ -66,32 +66,30 @@ body {
     cursor: pointer;
 }
 
-
-/* Estilos adicionales para los div internos si es necesario */
 .inivtado_inicio {
     background-color: #d2a159;
     padding: 20px;
     border-radius: 8px;
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center;
   }
   
   .img-cro {
-    flex: 1; /* Hace que los elementos dentro de img-cro ocupen el mismo espacio */
-    margin-right: 20px; /* Espacio entre la imagen y el siguiente div */
+    flex: 1;
+    margin-right: 20px; 
   }
   
   .img-cro img {
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-    border-radius: 8px; /* Borde redondeado para la imagen si es necesario */
+    max-width: 100%; 
+    border-radius: 8px; 
   }
   
   .boton-entrar-inv {
-    text-align: right; /* Alinea el botón a la derecha */
+    text-align: right; 
   }
   
   .boton-entrar-inv button {
-    padding: 12px; /* Aumenta el espacio interno del botón */
+    padding: 12px; 
     background-color: #996f40;
     color: #fff;
     border: none;
@@ -102,7 +100,6 @@ body {
     background-color: #996f40;
   }
   
-  /* Estilos adicionales para el segundo div (img-cro con texto) */
   .img-cro h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -121,7 +118,6 @@ body {
     border-radius: 8px;
 }
 
-/* Estilos para los botones */
 button {
     background-color: #944d1f;
     color: #fff;
@@ -131,7 +127,6 @@ button {
     cursor: pointer;
 }
 
-/* Estilos específicos para cada tipo de botón */
 .inivtado_inicio button {
     background-color: #944d1f;
 }
@@ -158,11 +153,11 @@ button {
 }
 @media (min-width: 768px) {
   .container {
-      flex-direction: row; /* Vuelve a la disposición original en pantallas más grandes */
+      flex-direction: row; 
   }
 
   .inivtado_inicio,
   .container-3 {
-      width: 48%; /* Ajusta el ancho de los contenedores en pantallas más grandes */
+      width: 48%; 
   }
 }

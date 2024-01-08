@@ -3,16 +3,16 @@
     background-color: #3e7157;
     height: 20vh;
     width: 35%;
-    margin: 20px 0; /* Ajusta el margen superior e inferior según tus necesidades */
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: center; 
     border-radius: 0;
     border: 2px solid #000;
 }
 .nombre-actividad{
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
+    justify-content: center; 
 }
 
 .elementos-importantes {
@@ -29,7 +29,7 @@
     height: 45px;
     border: 2px solid #000;
     border-radius: 10px;
-    margin: 20px; /* Ajusta el margen según tus necesidades */
+    margin: 20px; 
 }
 .continuar-pagina {
     display: flex;
@@ -40,15 +40,15 @@
     height: 45px;
     border: 2px solid #000;
     border-radius: 10px;
-    margin: 20px; /* Ajusta el margen según tus necesidades */
+    margin: 20px; 
 }
 
 .informacion-extra {
     display: flex;
-    flex-direction: row; /* Alinea los elementos en línea horizontalmente */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    flex-direction: row; 
+    justify-content: center; 
 }
 
 .informacion-extra p {
-    margin: 0 10px; /* Ajusta el margen horizontal entre los párrafos según tus necesidades */
+    margin: 0 10px; 
 }
