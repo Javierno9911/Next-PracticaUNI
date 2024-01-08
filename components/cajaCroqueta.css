@@ -51,3 +51,14 @@
 .container-puntuar-boton button:hover {
     background-color: #ffca2b;
 }
+@media only screen and (max-width: 480px) {
+    .container-lista-croqueta {
+        width: 100%; 
+    }
+
+    .elementos-importantes,
+    .container-puntuar-boton {
+        flex-direction: column;
+        align-items: center; 
+    }
+}

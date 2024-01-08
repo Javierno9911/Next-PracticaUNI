@@ -27,3 +27,9 @@
   li {
     margin-bottom: 10px;
   }
+  @media only screen and (max-width: 480px) {
+    .caja {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }

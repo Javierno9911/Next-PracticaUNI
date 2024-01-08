@@ -35,3 +35,20 @@ label {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .container-borrar {
+        width: 80%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-borrar {
+        width: 100%; 
+    }
+
+    .titulo-menu,
+    .boton-borrar-usur {
+        width: 100%; 
+    }
+}

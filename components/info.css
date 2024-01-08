@@ -34,3 +34,8 @@
   .redes-sociales a:hover {
     text-decoration: underline;
   }
+  @media only screen and (max-width: 771px) {
+    .contactos-redes-sociales {
+        display: none; /* Hace que desaparezca en pantallas pequeñas */
+    }
+}
