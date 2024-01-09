@@ -1,8 +1,6 @@
-"use client";
-
 import { NextResponse } from 'next/server'
 import { readFileSync, writeFileSync } from 'fs';
-
+//http://localhost:3000/api/users
 export async function POST(request) {
     const data = await request.json()
     try{

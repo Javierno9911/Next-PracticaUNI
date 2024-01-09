@@ -2,11 +2,9 @@
 import React, { useState} from 'react';
 import {useRouter} from 'next/navigation'
 import styles from './formulario.css';
-
 const Formulario = ({ tipo }) => {
   const router = useRouter()
   //CASE ADMIN
-
   const [nombreComercio, setNombreComercio] = useState('');
   const [contrasenaA, setContrasenaA] = useState('');
   const [cif, setCif] = useState('');
@@ -14,9 +12,6 @@ const Formulario = ({ tipo }) => {
   const [direccion, setDireccion] = useState('');
   const [email, setEmail] = useState('');
   const [telefono, setTelefono] = useState('');
-
- // const [successMessage, setSuccessMessage] = useState('');
- // const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmitA = async (e) => {
   e.preventDefault();
@@ -32,7 +27,7 @@ const Formulario = ({ tipo }) => {
     }
 
     try {
-      const response = await fetch("/api/regiscomercio/route", {
+      fetch("/api/rcomercio/route", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -56,43 +51,86 @@ const Formulario = ({ tipo }) => {
   const [nombre, setNombre] = useState('');
   const [ingredientes, setIngredientes] = useState('');
 
-  const handleSubmitC = (e) => {
-    e.preventDefault();
-    console.log('Nombre:', nombre);
-    console.log('Ingredientes:', ingredientes);
+  const handleSubmitC = async (e) => {
+  e.preventDefault();
+
+    const publicaion = {
+      nombre: nombre,
+      ingredientes: ingredientes,
+    }
+
+    try {
+      fetch("/api/rpublicacion/route", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          // 'Authorization': `Bearer ${tokenJWT}`
+        },
+        body: JSON.stringify(publicaion)
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error en la solicitud: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(data);
+      router.push("/comercio/menu");
+    } catch (error) {
+        console.error("Error al realizar la solicitud:", error);
+      }
   };
-
   //CASE USUARIO
-
   const [nombreUsu, setNombreUsu] = useState('');
   const [contrasenaU, setContrasenaU] = useState('');
   const [ciudadU, setCiudadU] = useState('');
   const [edad, setEdad] = useState('');
   const [actividad, setActividad] = useState('');
 
-  const handleSubmitU = (e) => {
+  const handleSubmitU = async (e) => {
     e.preventDefault();
-
-    console.log('Nombre:', nombreUsu);
-    console.log('Contraseña:', contrasenaU);
-    console.log('Ciudad:', ciudadU);
-    console.log('Edad:', edad);
-    console.log('Actividad:', actividad);
-  };
-
+  
+      const publicaion = {
+        nombre: nombre,
+        contrasena:contrasenaU,
+        ciudad: ciudadU,
+        edad: edad,
+        actividad: actividad,
+      }
+  
+      try {
+        fetch("/api/rusuario/route", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Authorization': `Bearer ${tokenJWT}`
+          },
+          body: JSON.stringify(publicaion)
+        });
+  
+        if (!response.ok) {
+          throw new Error(`Error en la solicitud: ${response.status}`);
+        }
+  
+        const data = await response.json();
+        console.log(data);
+        router.push("/usuario/menu");
+      } catch (error) {
+          console.error("Error al realizar la solicitud:", error);
+        }
+    };
   let inputs;
-
   switch (tipo) {
     case 'admin':
       inputs = (
         <>
-          <input onChange={(e) => setNombreComercio(e.target.value)} type="text" placeholder="Nombre Comercio" value={nombreComercio}  />
-          <input onChange={(e) => setContrasenaA(e.target.value)} type="text" placeholder="Contraseña" value={contrasenaA}  />
-          <input onChange={(e) => setCif(e.target.value)} type="text" placeholder="CIF" value={cif}  />
-          <input onChange={(e) => setCiudadA(e.target.value)} type="text" placeholder="Ciudad" value={ciudadA}  />
-          <input onChange={(e) => setDireccion(e.target.value)} type="text" placeholder="Dirección" value={direccion}/>
-          <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="E-mail" value={email}  />
-          <input onChange={(e) => setTelefono(e.target.value)} type="text" placeholder="Teléfono" value={telefono}  />
+          <input onChange={(e) => setNombreComercio(e.target.value)} type="text" name="nombre" placeholder="Nombre Comercio" />
+          <input onChange={(e) => setContrasenaA(e.target.value)} type="text" name="password" placeholder="Contraseña" />
+          <input onChange={(e) => setCif(e.target.value)} type="text" name="cif" placeholder="CIF" />
+          <input onChange={(e) => setCiudadA(e.target.value)} type="text" name="ciudad" placeholder="Ciudad"/>
+          <input onChange={(e) => setDireccion(e.target.value)} type="text" name="direcion" placeholder="Dirección"/>
+          <input onChange={(e) => setEmail(e.target.value)} type="text" name="email" placeholder="E-mail"/>
+          <input onChange={(e) => setTelefono(e.target.value)} type="text" name="telefono" placeholder="Teléfono"/>
           <button type="submit" onClick={handleSubmitA}>Enviar</button>
         </>
       );
