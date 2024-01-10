@@ -15,7 +15,7 @@ function MenuPage({ tipo }) {
           </div>
           <div>
             <Link href="/admin/borrar">
-            <button className={styles["boton-menu-user"]}>BORRAR COMERCIO</button>
+            <button className={styles["boton-menu-user"]}>LISTADO COMERCIO</button>
             </Link>
           </div>
         </>

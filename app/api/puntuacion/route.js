@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync } from 'fs';
 
 export async function GET() {
     try{
-        const users = JSON.parse(readFileSync("data/comercios.txt"))
+        const users = JSON.parse(readFileSync("data/puntuaciones.txt"))
         //console.log(users)
         return NextResponse.json({users})
     } catch(e){  
@@ -14,11 +14,11 @@ export async function GET() {
 export async function DELETE(request) {
    const data = await request.json()
    try {
-        const users = JSON.parse(readFileSync("data/comercios.txt"))
+        const users = JSON.parse(readFileSync("data/puntuaciones.txt"))
         //console.log(users)
-        const usersFIlter = users.filter(user => user.nombre != data.nombre) 
+        const usersFIlter = users.filter(user => user.valor != data.valor) 
         //console.log(usersFIlter)
-        writeFileSync("data/comercios.txt", JSON.stringify(usersFIlter))
+        writeFileSync("data/puntuaciones.txt", JSON.stringify(usersFIlter))
         return NextResponse.json({message: "Usuario eliminado...", status: 200})
     } catch(e){
         console.log(e)
