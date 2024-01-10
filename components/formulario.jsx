@@ -142,8 +142,8 @@ const Formulario = ({ tipo }) => {
     case 'comercio':
       inputs = (
         <>
-          <input onChange={(e) => setNombre(e.target.value)} type="text" placeholder="Nombre" value={nombre}/>
-          <input onChange={(e) => setIngredientes(e.target.value)} type="text" placeholder="Ingredientes" value={ingredientes}/>
+          <input onChange={(e) => setNombre(e.target.value)} type="text" placeholder="Nombre"/>
+          <input onChange={(e) => setIngredientes(e.target.value)} type="text" placeholder="Ingredientes"/>
           <button type="submit" onClick={handleSubmitC}>Enviar</button>
         </>
       );
@@ -151,11 +151,11 @@ const Formulario = ({ tipo }) => {
     case 'usuario':
       inputs = (
         <>
-          <input onChange={(e) => setNombreUsu(e.target.value)} type="text" placeholder="Nombre" value={nombreU}/>
-          <input onChange={(e) => setContrasenaU(e.target.value)} type="text" placeholder="Contraseña" value={contrasenaU}  />
-          <input onChange={(e) => setCiudadU(e.target.value)} type="text" placeholder="Ciudad" value={ciudadU}  />
-          <input onChange={(e) => setEdad(e.target.value)} type="text" placeholder="Edad" value={edad}  />
-          <input onChange={(e) => setActividad(e.target.value)} type="text" placeholder="Actividad" value={actividad}  />
+          <input onChange={(e) => setNombreUsu(e.target.value)} type="text" placeholder="Nombre"/>
+          <input onChange={(e) => setContrasenaU(e.target.value)} type="text" placeholder="Contraseña"/>
+          <input onChange={(e) => setCiudadU(e.target.value)} type="text" placeholder="Ciudad"/>
+          <input onChange={(e) => setEdad(e.target.value)} type="text" placeholder="Edad"/>
+          <input onChange={(e) => setActividad(e.target.value)} type="text" placeholder="Actividad"/>
           <button type="submit" onClick={handleSubmitU}>Enviar</button>
         </>
       );
