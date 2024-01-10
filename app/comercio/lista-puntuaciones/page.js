@@ -9,7 +9,7 @@ function InvitadoPage() {
                     <button className="bton-atras">⬅</button>
                 </Link>
             </div>
-            <div class="formulario-div">
+            <div className="formulario-div">
                 <ListasAdminy tipo="comercio" />
             </div>
         </div>

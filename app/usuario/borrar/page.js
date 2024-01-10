@@ -10,7 +10,7 @@ function UsuarioBorrarPage() {
           <button className="bton-atras">⬅</button>
         </Link>
       </div>
-      <div class="formulario-div">
+      <div className="formulario-div">
         <h1>BORRAR USUARIO</h1>
         <Borrar tipo="usuario" />
       </div>

@@ -10,7 +10,7 @@ function FormuPage() {
                     <button className="bton-atras">⬅</button>
                 </Link>
             </div>
-            <div class="formulario-div">
+            <div className="formulario-div">
                 <h1>Informacion Comercio</h1>
                 <Formu tipo="usuario" />
             </div>

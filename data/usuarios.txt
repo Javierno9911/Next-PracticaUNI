@@ -1,3 +1,1 @@
-[{ id: 1, nombre: 'comercio_crocante1', password:'123', city:'Madrid', actividad:'Menu'},
-{ id: 2, nombre: 'comercio_crocante2', password:'123', city:'Barcelona',actividad:'Menu'},
-];
+[{"nombre":"","contrasena":"123","ciudad":"123","edad":"123","actividad":"123"},{"nombre":"javier","contrasena":"123","ciudad":"123","edad":"132","actividad":"123"}]

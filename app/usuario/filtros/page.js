@@ -9,7 +9,7 @@ function FormuPage() {
                     <button className="bton-atras">⬅</button>
                 </Link>
             </div>
-            <div class="container-menu">
+            <div className="container-menu">
                 <Filtro/>
             </div>
         </div>

@@ -3,7 +3,7 @@ import "./style.css"
 import Menu from '@/components/menu';
 function MenuComercio() {
     return (
-        <div class="container-menu">
+        <div className="container-menu">
             <Menu tipo="comercio" />
         </div>
       )

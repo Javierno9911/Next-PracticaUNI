@@ -27,32 +27,33 @@ const Formulario = ({ tipo }) => {
     }
 
     try {
-      fetch("/api/rcomercio/route", {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          // 'Authorization': `Bearer ${tokenJWT}`
-        },
-        body: JSON.stringify(comercio)
+      const response = await fetch("/api/rcomercio", {
+          method: "POST",
+          headers: {
+              'Content-Type': 'application/json',
+              // 'Authorization': `Bearer ${tokenJWT}`
+          },
+          body: JSON.stringify(comercio)
       });
-
+  
       if (!response.ok) {
-        throw new Error(`Error en la solicitud: ${response.status}`);
+          throw new Error(`Error en la solicitud: ${response.status}`);
       }
-
+  
       const data = await response.json();
       console.log(data);
       router.push("/admin/menu");
     } catch (error) {
-        console.error("Error al realizar la solicitud:", error);
-      }
+      console.error("Error al realizar la solicitud:", error);
+      // Puedes hacer algo más aquí, como mostrar un mensaje al usuario indicando que ocurrió un error
+    }
   };
   //CASE COMERCIO
   const [nombre, setNombre] = useState('');
   const [ingredientes, setIngredientes] = useState('');
 
   const handleSubmitC = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
     const publicaion = {
       nombre: nombre,
@@ -60,28 +61,29 @@ const Formulario = ({ tipo }) => {
     }
 
     try {
-      fetch("/api/rpublicacion/route", {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          // 'Authorization': `Bearer ${tokenJWT}`
-        },
-        body: JSON.stringify(publicaion)
+      const response = await fetch("/api/rpublicacion", {
+          method: "POST",
+          headers: {
+              //Authorization: `Bearer ${tokenJWT}`
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(publicaion)
       });
-
+  
       if (!response.ok) {
-        throw new Error(`Error en la solicitud: ${response.status}`);
+          throw new Error(`Error en la solicitud: ${response.status}`);
       }
-
+  
       const data = await response.json();
       console.log(data);
       router.push("/comercio/menu");
-    } catch (error) {
-        console.error("Error al realizar la solicitud:", error);
-      }
+  } catch (error) {
+      console.error("Error al realizar la solicitud:", error);
+      // Puedes hacer algo más aquí, como mostrar un mensaje al usuario indicando que ocurrió un error en el inicio de sesión
+  }
   };
   //CASE USUARIO
-  const [nombreUsu, setNombreUsu] = useState('');
+  const [nombreU, setNombreUsu] = useState('');
   const [contrasenaU, setContrasenaU] = useState('');
   const [ciudadU, setCiudadU] = useState('');
   const [edad, setEdad] = useState('');
@@ -90,8 +92,8 @@ const Formulario = ({ tipo }) => {
   const handleSubmitU = async (e) => {
     e.preventDefault();
   
-      const publicaion = {
-        nombre: nombre,
+      const usuario = {
+        nombre: nombreU,
         contrasena:contrasenaU,
         ciudad: ciudadU,
         edad: edad,
@@ -99,25 +101,26 @@ const Formulario = ({ tipo }) => {
       }
   
       try {
-        fetch("/api/rusuario/route", {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/json',
-            // 'Authorization': `Bearer ${tokenJWT}`
-          },
-          body: JSON.stringify(publicaion)
+        const response = await fetch("/api/rusuario", {
+            method: "POST",
+            headers: {
+                //Authorization: `Bearer ${tokenJWT}`
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(usuario)
         });
-  
+    
         if (!response.ok) {
-          throw new Error(`Error en la solicitud: ${response.status}`);
+            throw new Error(`Error en la solicitud: ${response.status}`);
         }
-  
+    
         const data = await response.json();
         console.log(data);
-        router.push("/usuario/menu");
-      } catch (error) {
-          console.error("Error al realizar la solicitud:", error);
-        }
+        router.push("/usuario");
+    } catch (error) {
+        console.error("Error al realizar la solicitud:", error);
+        // Puedes hacer algo más aquí, como mostrar un mensaje al usuario indicando que ocurrió un error en el inicio de sesión
+    }
     };
   let inputs;
   switch (tipo) {
@@ -148,7 +151,7 @@ const Formulario = ({ tipo }) => {
     case 'usuario':
       inputs = (
         <>
-          <input onChange={(e) => setNombreUsu(e.target.value)} type="text" placeholder="Nombre" value={nombreUsu}/>
+          <input onChange={(e) => setNombreUsu(e.target.value)} type="text" placeholder="Nombre" value={nombreU}/>
           <input onChange={(e) => setContrasenaU(e.target.value)} type="text" placeholder="Contraseña" value={contrasenaU}  />
           <input onChange={(e) => setCiudadU(e.target.value)} type="text" placeholder="Ciudad" value={ciudadU}  />
           <input onChange={(e) => setEdad(e.target.value)} type="text" placeholder="Edad" value={edad}  />

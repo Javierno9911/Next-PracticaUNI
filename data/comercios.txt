@@ -1,3 +1,1 @@
-[{ id: 1, nombre: 'comercio_crocante1', password: '123', cif: '76365781', city: 'Madrid', direcion: 'Pinto', correo: 'croqueta@gmail.com', telefono: '601377807' },
-{ id: 2, nombre: 'comercio_crocante2', password: '123', cif: '76365782', city: 'Barcelona', direcion: 'Girona', correo: 'croqueta@gmail.com', telefono: '601377807' },
-];
+[{"nombre":"ililili","password":"lilililil","cif":"lilililil","city":"Pinto","direcion":"c/ Juana Frances n/ 62","correo":"javierno99@gmail.com","telefono":"601377806"}]

@@ -9,7 +9,7 @@ function CroquetaListadoPage() {
                     <button className="bton-atras">⬅</button>
                 </Link>
             </div>
-            <div class="formulario-div">
+            <div className="formulario-div">
                 <BorrarLista tipo="comercio" />
             </div>
         </div>

@@ -2,18 +2,18 @@ import "./style.css"
 import Link from 'next/link';
 function UsuarioPage() {
     return (
-        <div class="container-registro">
-          <div class="login">
+        <div className="container-registro">
+          <div className="login">
             <h2>LOGIN USUARIO</h2>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nom" class="nombre"></input>
+            <input type="text" id="nom" className="nombre"></input>
             <label for="nombre">Contraseña</label>
-            <input class="contraseña" id="con" type="text"></input>
+            <input className="contraseña" id="con" type="text"></input>
             <Link href="/usuario/menu">
-              <button class="boton-login">LOGIN</button>
+              <button className="boton-login">LOGIN</button>
             </Link>
             <Link href="/usuario/registro">
-                <p class="link-registro">¿No tienes cuenta?</p>
+                <p className="link-registro">¿No tienes cuenta?</p>
             </Link>
           </div>
         </div>
