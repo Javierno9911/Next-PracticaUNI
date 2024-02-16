@@ -1,1 +1,1 @@
-[{"nombre":"","contrasena":"123","ciudad":"123","edad":"123","actividad":"123"},{"nombre":"javier","contrasena":"123","ciudad":"123","edad":"132","actividad":"123"}]
+[{"nombre":"","contrasena":"123","ciudad":"123","edad":"123","actividad":"123"},{"nombre":"javier","contrasena":"123","ciudad":"123","edad":"132","actividad":"123"},{"nombre":"javier1","contrasena":"123","ciudad":"Madrid","edad":"23","actividad":"Comida"}]
